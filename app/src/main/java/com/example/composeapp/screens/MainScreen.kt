@@ -31,7 +31,7 @@ fun MainScreen(navController: NavController, viewModel: MainViewModel) {
             modifier = Modifier
                 .padding(20.dp)
         ) {
-            items(allMovies.take(10)) { item ->
+            items(allMovies.take(100)) { item ->
                 MovieItem(item = item, navController = navController)
             }
         }
